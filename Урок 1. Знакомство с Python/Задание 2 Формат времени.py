@@ -6,5 +6,5 @@ user_sec = int(input('Enter the number of seconds to convert to hours and minute
 minutes = user_sec // 60
 seconds = user_sec % 60
 hours = minutes // 60
-answer = minutes // 60
+answer = minutes % 60
 print(f'{hours:02.0f}:{answer:02.0f}:{seconds:02.0f}')
