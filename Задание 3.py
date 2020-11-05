@@ -1,3 +1,18 @@
+
+# 3. Реализовать функцию my_func(),
+# которая принимает три позиционных аргумента,
+# и возвращает сумму наибольших двух аргументов.
+
+def my_func(a, b, c):
+    print(f'sum = {a + b + c - min(a, b, c)}')
+
+
+try:
+    my_func(int(input('Введите первое число ')), int(input('Введите второе число ')),
+            int(input('Введите третье число ')))
+except ValueError:
+    print('Error')
+
 # 3. Пользователь вводит месяц в виде целого числа от 1 до 12.
 # Сообщить к какому времени года относится месяц (зима, весна, лето, осень).
 # Напишите решения через list и через dict.
@@ -44,3 +59,4 @@ print(f'User unswer: {answer_mon}, this is {answer_ses} ')
 list_season = ["", "Winter", "Winter", "Spring", "Spring", "Spring", "Summer", "Summer", "Summer", "Autumn", "Autumn",
                "Autumn", "Winter"]
 print("This number corresponds to the time of year", list_season[num_month])
+
